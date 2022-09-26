@@ -28,7 +28,7 @@ async function login(email: string, password: string): Promise<Header> {
   }));
 
   const browser = await puppeteer.launch({
-    headless: false,
+    headless: true,
     args: ["--no-sandbox", "--start-maximized"],
     defaultViewport: null,
   });
